@@ -7,6 +7,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    services:
+      mongo:
+        image: mongo:3.2
+        restart: always
+        ports:
+          - 27017
+
     steps:
     - uses: actions/checkout@v1
     - name: Set up Ruby 2.3
