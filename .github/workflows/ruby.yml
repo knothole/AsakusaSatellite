@@ -25,6 +25,6 @@ jobs:
         bundle install --jobs 4 --retry 3
         bundle exec rake
       env:
-        MONGODB_HOST: mongo
-        MONGO_PORT_27017_TCP_ADDR: mongo
+        MONGODB_HOST: localhost
+        MONGO_PORT_27017_TCP_ADDR: localhost
         MONGODB_PORT: 27017
